@@ -1,0 +1,20 @@
+OASISFormat: 0.4
+Name:        Route
+Version:     0
+Synopsis:    Stupid url router
+Authors:     Armael
+License:     MIT
+BuildTools:  ocamlbuild
+Plugins:     META (0.4), DevFiles (0.4)
+
+Library "route"
+  Path:         lib
+  Modules:      Route
+  BuildDepends: str
+  
+Executable "example"
+  MainIs:         example.ml
+  Path:           src
+  CompiledObject: best
+  BuildDepends:   route
+  Install:        false

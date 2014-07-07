@@ -1,0 +1,12 @@
+# OASIS_START
+# DO NOT EDIT (digest: d1415cdd8a60cf000885f03fe4709ba0)
+version = "0"
+description = "Stupid url router"
+requires = "str"
+archive(byte) = "route.cma"
+archive(byte, plugin) = "route.cma"
+archive(native) = "route.cmxa"
+archive(native, plugin) = "route.cmxs"
+exists_if = "route.cma"
+# OASIS_STOP
+
